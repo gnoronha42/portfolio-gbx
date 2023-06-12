@@ -1,0 +1,182 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <section id="about">
+        <div class="profile-picture">
+            <img src="my-photo.jpg" alt="My Photo">
+        </div>
+
+        <div class="bio">
+            <h2>About Me</h2>
+            <p>Hello! I'm a software engineer with experience in web and mobile app development. My skills include React, Redux, Spring
+            Boot, and API development. I have experience in Internet of Things (IoT) projects and I'm versatile in both front-end
+            and back-end development. If you're looking for innovative and high-quality solutions, I'm ready to help make your
+            project a success.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Front-end: React, Redux</li>
+            <li>Back-end: Spring Boot, PostgreSQL, MQTT</li>
+            <li>Containerization: Docker</li>
+            <li>Agile Methodologies: Scrum, Kanban</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="job">
+            <h3>Intermediate Software Engineer - Creathus Institute (2021-2023)</h3>
+            <ul>
+                <li>Developed web applications, both front-end and back-end</li>
+                <li>Used React and Redux for front-end state control</li>
+                <li>Developed API's with Spring Boot and documented them with Swagger</li>
+                <li>Used MQTT protocol for publish-subscribe messaging in IoT projects</li>
+                <li>Containerized applications using Docker</li>
+                <li>Used agile methodologies like Scrum and Kanban, and tools like Jira and Trello</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Junior Software Engineer - Transire Institute (2019-2021)</h3>
+            <ul>
+                <li>Developed front-end of web and mobile applications</li>
+                <li>Integrated IoT control APIs</li>
+                <li>Used HTTP protocol to consume data on the front-end</li>
+                <li>Performed unit tests using Robot Framework</li>
+                <li>Developed IoT control mobile apps using React Native</li>
+                <li>Developed management systems using React and Angular</li>
+                <li>Wrote test plans and release notes</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Portfolio</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 100,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: "#ffffff"
+                },
+                shape: {
+                    type: "circle",
+                    stroke: {
+                        width: 0,
+                        color: "#000000"
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    },
+                    image: {
+                        src: "img/github.svg",
+                        width: 100,
+                        height: 100
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ffffff",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: "repulse"
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: "push"
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
